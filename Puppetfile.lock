@@ -26,7 +26,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.7.5)
+    git (2.7.7)
+
+GITHUBTARBALL
+  remote: boxen/puppet-github_for_mac
+  specs:
+    github_for_mac (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-gitx
+  specs:
+    gitx (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -42,6 +52,11 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.4.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.2.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -79,9 +94,19 @@ GITHUBTARBALL
     ruby (8.1.7)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sublime_text
+  specs:
+    sublime_text (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -106,14 +131,18 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
+  brewcask (>= 0)
   dnsmasq (= 2.0.1)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
-  git (= 2.7.5)
+  git (= 2.7.7)
+  github_for_mac (>= 0)
+  gitx (>= 0)
   go (= 2.1.0)
   homebrew (= 1.11.2)
   hub (= 1.4.0)
   inifile (= 1.1.1)
+  iterm2 (>= 0)
   module_data (= 0.0.3)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
@@ -123,6 +152,8 @@ DEPENDENCIES
   repository (= 2.3.0)
   ruby (= 8.1.7)
   stdlib (= 4.2.1)
+  sublime_text (>= 0)
   sudo (= 1.0.0)
+  vagrant (>= 0)
   xquartz (= 1.2.1)
 

@@ -1,39 +1,36 @@
 class people::ejoubaud {
   $home     = "/Users/${::boxen_user}"
-  $dotfiles = "${home}/.dotfiles"
-
-  repository { $dotfiles:
-    source  => 'ejoubaud/dotfiles',
-  }
 
   include brewcask
 
   $caskpackages = [
     'alfred',
     'bettertouchtool',
+    'dropbox',
     'firefox',
     'filezilla',
     'google-chrome',
-    'github',
-    'gitx',
-    'karabiner',
     'licecap',
     'mplayerx',
-    'private-internet-access',
-    'seil',
     'selfcontrol',
     'skype',
     'sequel-pro',
-    'vagrant',
     'vlc',
-    'virtualbox',
   ]
 
   package { $caskpackages:
     provider => 'brewcask',
   }
 
+  package { 'mackup':
+    ensure => present,
+  }
+
   include iterm2::stable
+  include github_for_mac
+  include gitx::l
+  include vagrant
+
   include sublime_text
 
   sublime_text::package {
